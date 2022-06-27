@@ -39,4 +39,4 @@ class Stock:
         final_data = pd.DataFrame(result)
         with open(file=file_path) as f:
             final_data.to_excel(file_path, index=False)
-        
+            f.close()
